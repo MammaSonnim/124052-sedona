@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Отели в Седоне</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="main-nav">
+      <a href="#" class="main-nav__item">Информация</a>
+      <a href="#" class="main-nav__item">Фото и видео</a>
+      <a href="#" class="main-nav__item logo"><img class="logo__img" src="#" alt="Sedona" width="" height=""></a>
+      <a href="#" class="main-nav__item">Карта штата</a>
+      <a href="#" class="main-nav__item">Гостиницы</a>
+    </nav>
+  </header>
+  <main class="page-content">
+    <form class="filters" action="/echo" method="get">
+      <fieldset class="filters__item filter">
+        <h2 class="filter__title">Инфраструктура:</h2>
+        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="checkbox" value="pool" checked>
+        <label class="filter__label" for="checkbox-1">Бассейн</label>
+        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="checkbox" value="parking">
+        <label class="filter__label" for="checkbox-2">Парковка</label>
+        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="checkbox" value="wi-fi">
+        <label class="filter__label" for="checkbox-3">WI-FI</label>
+      </fieldset>
+      <fieldset class="filters__item filter">
+        <h2 class="filter__title">Особенности:</h2>
+        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="checkbox" value="hotel" checked>
+        <label class="filter__label" for="checkbox-1">Гостиница</label>
+        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="checkbox" value="motel">
+        <label class="filter__label" for="checkbox-2">Мотель</label>
+        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="checkbox" value="apartments">
+        <label class="filter__label" for="checkbox-3">Апартаменты</label>
+      </fieldset>
+      <fieldset class="filters__item filter-price">
+        <h2 class="filters__title">Стоимость в сутки (р):</h2>
+        <div class="filter-price__inputs price-inputs">
+          <label class="price-inputs__label price-inputs__label_min" for="input-min">от
+            <input class="price-inputs__input price-inputs__input_min" id="input-min" type="text" value="0">
+          </label>
+          <label class="price-inputs__label price-inputs__label_max" for="input-max">до
+            <input class="price-inputs__input price-inputs__input_max" id="input-max" type="text" value="3000">
+          </label>
+        </div>
+        <div class="filter-price__bar price-bar">
+          <div class="price-panel__scale">
+            <div class="price-panel__range" style="margin-left: 20px; width: 70%"></div>
+          </div>
+          <div class="price-panel__toggle price-panel__toggle_min"></div>
+          <div class="price-panel__toggle price-panel__toggle_max"></div>
+        </div>
+        <button class="filters__btn btn btn_filter" type="submit">Показать</button>
+      </fieldset>
+    </form>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__cols">
+      <div class="main-footer__col">
+        <p class="hashtag">#visitsedona</p>
+      </div>
+      <div class="main-footer__col socials">
+        <a href="#" class="social social_twitter"></a>
+        <a href="#" class="social social_facebook"></a>
+        <a href="#" class="social social_youtube"></a>
+      </div>
+      <div class="main-footer__col copyright">
+        <p class="copyright__text">Website by</p>
+        <img class="copyright__img" src="#" alt="HTML Academy" width="" height="">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
