@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="main-header">
     <nav class="main-nav">
       <a href="#" class="main-nav__item">Информация</a>
       <a href="#" class="main-nav__item">Фото и видео</a>
@@ -83,7 +83,7 @@
         <h1 class="promo__title">Заинтересовались?</h1>
         <p class="promo__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="promo__btn btn btn_promo">Поиск гостиницы в Седоне</a>
-        <section class="promo__modal modal">
+        <div class="promo__modal modal">
           <form class="modal__form" action="/echo" method="post">
             <label class="modal__label" for="check-in-date">Дата заезда:
               <input class="modal__input" type="date" name="check-in" id="check-in-date">
@@ -106,12 +106,28 @@
             <button class="modal__btn btn btn_modal" type="submit" name="search">Найти</button>
           </form>
         </section>
-      </section>
+      </div>
       <div class="map">
         <img class="map__image" src="./img/map.png" alt="Седона на карте" width="" height="">
         <div class="y-map" id="map"></div>
       </div>
     </article>
   </main>
+  <footer class="main-footer">
+    <div class="main-footer__cols">
+      <div class="main-footer__col">
+        <p class="hashtag">#visitsedona</p>
+      </div>
+      <div class="main-footer__col socials">
+        <a href="#" class="social social_twitter"></a>
+        <a href="#" class="social social_facebook"></a>
+        <a href="#" class="social social_youtube"></a>
+      </div>
+      <div class="main-footer__col copyright">
+        <p class="copyright__text">Website by</p>
+        <img class="copyright__img" src="#" alt="HTML Academy" width="" height="">
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
