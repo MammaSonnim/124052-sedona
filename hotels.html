@@ -22,21 +22,21 @@
     <form class="filters" action="/echo" method="get">
       <fieldset class="filters__item filter">
         <h2 class="filter__title">Инфраструктура:</h2>
-        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="checkbox" value="pool" checked>
+        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="service-checkbox" value="pool" checked>
         <label class="filter__label" for="checkbox-1">Бассейн</label>
-        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="checkbox" value="parking">
+        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="service-checkbox" value="parking">
         <label class="filter__label" for="checkbox-2">Парковка</label>
-        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="checkbox" value="wi-fi">
+        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="service-checkbox" value="wi-fi">
         <label class="filter__label" for="checkbox-3">WI-FI</label>
       </fieldset>
       <fieldset class="filters__item filter">
         <h2 class="filter__title">Особенности:</h2>
-        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="checkbox" value="hotel" checked>
-        <label class="filter__label" for="checkbox-1">Гостиница</label>
-        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="checkbox" value="motel">
-        <label class="filter__label" for="checkbox-2">Мотель</label>
-        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="checkbox" value="apartments">
-        <label class="filter__label" for="checkbox-3">Апартаменты</label>
+        <input class="filer__checkbox" id="checkbox-4" type="checkbox" name="hotel-type-checkbox" value="hotel" checked>
+        <label class="filter__label" for="checkbox-4">Гостиница</label>
+        <input class="filer__checkbox" id="checkbox-5" type="checkbox" name="hotel-type-checkbox" value="motel">
+        <label class="filter__label" for="checkbox-5">Мотель</label>
+        <input class="filer__checkbox" id="checkbox-6" type="checkbox" name="hotel-type-checkbox" value="apartments">
+        <label class="filter__label" for="checkbox-6">Апартаменты</label>
       </fieldset>
       <fieldset class="filters__item filter-price">
         <h2 class="filters__title">Стоимость в сутки (р):</h2>
@@ -73,7 +73,7 @@
       </section>
       <section class="results__list hotels">
         <article class="hotels__item hotel-card">
-          <img src="#" alt="" class="hotel-card__img">
+          <img src="#" alt="Amara Resort & Spa" class="hotel-card__img">
           <section class="hotel-card__descr hotel-descr">
             <h2 class="hotel-descr__title">Amara Resort &amp; Spa</h2>
             <p class="hotel-descr__type">Гостиница</p>
@@ -93,7 +93,7 @@
           </section>
         </article>
         <article class="hotels__item hotel-card">
-          <img src="#" alt="" class="hotel-card__img">
+          <img src="#" alt="Desert Quail Inn" class="hotel-card__img">
           <section class="hotel-card__descr hotel-descr">
             <h2 class="hotel-descr__title">Desert Quail Inn</h2>
             <p class="hotel-descr__type">Мотель</p>
@@ -113,7 +113,7 @@
           </section>
         </article>
         <article class="hotels__item hotel-card">
-          <img src="#" alt="" class="hotel-card__img">
+          <img src="#" alt="Villas at Poco Diablo" class="hotel-card__img">
           <section class="hotel-card__descr hotel-descr">
             <h2 class="hotel-descr__title">Villas at Poco Diablo</h2>
             <p class="hotel-descr__type">Апартаменты</p>
