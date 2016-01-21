@@ -58,10 +58,12 @@
 /* Base and typography */
 
 body {
+  min-width: 768px;
   font-family: 'PT Sans';
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  background-color: #f2f2f2;
 }
 
 img {
@@ -69,3 +71,44 @@ img {
   height: auto;
 }
 
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  outline: 1px solid red;
+}
+
+/* Header layout */
+
+.main-header {
+  outline: 1px solid red;
+}
+
+.main-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 6%;
+  outline: 1px solid red;
+}
+
+.main-nav__item {
+  width: 22.73%;
+  outline: 1px solid red;
+}
+
+.main-nav__item_center {
+  width: 9.08%;
+}
+
+.main-nav__item_right {
+  text-align: right;
+}

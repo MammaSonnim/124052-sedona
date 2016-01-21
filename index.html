@@ -9,126 +9,128 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <nav class="main-nav">
-      <a href="#" class="main-nav__item">Информация</a>
-      <a href="#" class="main-nav__item">Фото и видео</a>
-      <a href="index.html" class="main-nav__item logo"><img class="logo__img" src="./img/logo.png" alt="логотип Седоны" width="138" height="70"></a>
-      <a href="#" class="main-nav__item">Карта штата</a>
-      <a href="hotels.html" class="main-nav__item">Гостиницы</a>
-    </nav>
-  </header>
-  <main class="main-content">
-    <section class="promo">
-      <img class="promo__img" src="./img/promo_1-welcome.png" alt="Welcome" width="188" height="45">
-      <img class="promo__img" src="./img/promo_2-gorgeous.png" alt="to the gorgeous" width="176" height="30">
-      <img class="promo__img" src="./img/promo_3-sedona.png" alt="Sedona" width="458" height="78">
-      <img class="promo__img" src="./img/promo_4-because.png" alt="Because the Grand Canyon sucks!" width="296" height="80">
-    </section>
-    <article class="features">
-      <h1 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-      <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      <article class="features__row feature">
-        <section class="feature__item feature-card">
-          <h2 class="feature-card__title">Настоящий городок</h2>
-          <span class="feature-card__num">№1</span>
-          <p class="feature-card__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
-        </section>
-        <img class="feature__img" src="./img/feature_1.jpg" alt="Фотография улицы Седоны" width="512" height="256">
-      </article>
-      <section class="features__row">
-        <article class="service-card">
-          <img class="service-card__img"  src="./img/service_1.png" alt="Иконка дома" width="75" height="72">
-          <h2 class="service-card__title">Жилье</h2>
-          <p class="service-card__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-        </article>
-        <article class="service-card">
-          <img class="service-card__img"  src="./img/service_2.png" alt="Иконка бургера" width="74" height="70">
-          <h2 class="service-card__title">Еда</h2>
-          <p class="service-card__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-        </article>
-        <article class="service-card">
-          <img class="service-card__img"  src="./img/service_3.png" alt="Икона коробки с подарком" width="64" height="76">
-          <h2 class="service-card__title">Сувениры</h2>
-          <p class="service-card__text">Не только китайского, но и местного производства!</p>
-        </article>
-      </section>
-      <article class="features__row feature">
-       <img class="feature__img" src="./img/feature_2.jpg" alt="Фотография Моста Дьявола" width="512" height="256">
-        <section class="feature__item feature-card">
-          <h2 class="feature-card__title">Там есть Мост Дьявола</h2>
-          <span class="feature-card__num">№2</span>
-          <p class="feature-card__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </section>
-      </article>
-      <section class="features__row">
-        <article class="feature-card feature-card_dark">
-          <h2 class="feature-card__title">Небольшая площадь</h2>
-          <span class="feature-card__num">№3</span>
-          <p class="feature-card__text">Все достопримечательности находятся очень близко</p>
-        </article>
-        <article class="feature-card feature-card_dark">
-          <h2 class="feature-card__title">Красивая дорога</h2>
-          <span class="feature-card__num">№4</span>
-          <p class="feature-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </article>
-        <article class="feature-card feature-card_dark">
-          <h2 class="feature-card__title">Мало туристов</h2>
-          <span class="feature-card__num">№5</span>
-          <p class="feature-card__text">Большинство едет в гранд каньон и толпится там</p>
-        </article>
-      </section>
-    </article>
-    <article class="booking">
+  <div class="main-wrapper">
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#" class="main-nav__item">Информация</a>
+        <a href="#" class="main-nav__item">Фото и видео</a>
+        <a href="index.html" class="main-nav__item logo"><img class="logo__img" src="./img/logo.png" alt="логотип Седоны" width="138" height="70"></a>
+        <a href="#" class="main-nav__item">Карта штата</a>
+        <a href="hotels.html" class="main-nav__item">Гостиницы</a>
+      </nav>
+    </header>
+    <main class="index-content">
       <section class="promo">
-        <h1 class="promo__title">Заинтересовались?</h1>
-        <p class="promo__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a href="#" class="promo__btn btn btn_promo">Поиск гостиницы в Седоне</a>
-        <div class="promo__modal modal">
-          <form class="modal__form" action="/echo" method="post">
-            <label class="modal__label" for="check-in-date">Дата заезда:
-              <input class="modal__input" type="date" name="check-in" id="check-in-date">
-              <a href="#" class="modal__calendar"></a>
-            </label>
-            <label class="modal__label" for="check-out-date">Дата выезда:
-              <input class="modal__input" type="date" name="check-out" id="check-out-date">
-              <a href="#" class="modal__calendar"></a>
-            </label>
-            <label class="modal__label" for="adults-count">Взрослые:
-              <a href="#" class="modal__counter modal__counter_minus"></a>
-              <input class="modal__count" type="number" name="adults" id="adults-count">
-              <a href="#" class="modal__counter modal__counter_plus"></a>
-            </label>
-            <label class="modal__label" for="children-count">Дети:
-              <a href="#" class="modal__counter modal__counter_minus"></a>
-              <input class="modal__count" type="number" name="children" id="children-count">
-              <a href="#" class="modal__counter modal__counter_plus"></a>
-            </label>
-            <button class="modal__btn btn btn_modal" type="submit" name="search">Найти</button>
-          </form>
-        </div>
+        <img class="promo__img" src="./img/promo_1-welcome.png" alt="Welcome" width="188" height="45">
+        <img class="promo__img" src="./img/promo_2-gorgeous.png" alt="to the gorgeous" width="176" height="30">
+        <img class="promo__img" src="./img/promo_3-sedona.png" alt="Sedona" width="458" height="78">
+        <img class="promo__img" src="./img/promo_4-because.png" alt="Because the Grand Canyon sucks!" width="296" height="80">
       </section>
-      <div class="map">
-        <img class="map__image" src="./img/map.jpg" alt="Седона на карте" width="768" height="593">
-        <div class="y-map" id="map"></div>
+      <article class="features">
+        <h1 class="features__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <article class="features__row feature">
+          <section class="feature__item feature-card">
+            <h2 class="feature-card__title">Настоящий городок</h2>
+            <span class="feature-card__num">№1</span>
+            <p class="feature-card__text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+          </section>
+          <img class="feature__img" src="./img/feature_1.jpg" alt="Фотография улицы Седоны" width="512" height="256">
+        </article>
+        <section class="features__row">
+          <article class="service-card">
+            <img class="service-card__img"  src="./img/service_1.png" alt="Иконка дома" width="75" height="72">
+            <h2 class="service-card__title">Жилье</h2>
+            <p class="service-card__text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </article>
+          <article class="service-card">
+            <img class="service-card__img"  src="./img/service_2.png" alt="Иконка бургера" width="74" height="70">
+            <h2 class="service-card__title">Еда</h2>
+            <p class="service-card__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </article>
+          <article class="service-card">
+            <img class="service-card__img"  src="./img/service_3.png" alt="Икона коробки с подарком" width="64" height="76">
+            <h2 class="service-card__title">Сувениры</h2>
+            <p class="service-card__text">Не только китайского, но и местного производства!</p>
+          </article>
+        </section>
+        <article class="features__row feature">
+         <img class="feature__img" src="./img/feature_2.jpg" alt="Фотография Моста Дьявола" width="512" height="256">
+          <section class="feature__item feature-card">
+            <h2 class="feature-card__title">Там есть Мост Дьявола</h2>
+            <span class="feature-card__num">№2</span>
+            <p class="feature-card__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </section>
+        </article>
+        <section class="features__row">
+          <article class="feature-card feature-card_dark">
+            <h2 class="feature-card__title">Небольшая площадь</h2>
+            <span class="feature-card__num">№3</span>
+            <p class="feature-card__text">Все достопримечательности находятся очень близко</p>
+          </article>
+          <article class="feature-card feature-card_dark">
+            <h2 class="feature-card__title">Красивая дорога</h2>
+            <span class="feature-card__num">№4</span>
+            <p class="feature-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </article>
+          <article class="feature-card feature-card_dark">
+            <h2 class="feature-card__title">Мало туристов</h2>
+            <span class="feature-card__num">№5</span>
+            <p class="feature-card__text">Большинство едет в гранд каньон и толпится там</p>
+          </article>
+        </section>
+      </article>
+      <article class="booking">
+        <section class="promo">
+          <h1 class="promo__title">Заинтересовались?</h1>
+          <p class="promo__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a href="#" class="promo__btn btn btn_promo">Поиск гостиницы в Седоне</a>
+          <div class="promo__modal modal">
+            <form class="modal__form" action="/echo" method="post">
+              <label class="modal__label" for="check-in-date">Дата заезда:
+                <input class="modal__input" type="date" name="check-in" id="check-in-date">
+                <a href="#" class="modal__calendar"></a>
+              </label>
+              <label class="modal__label" for="check-out-date">Дата выезда:
+                <input class="modal__input" type="date" name="check-out" id="check-out-date">
+                <a href="#" class="modal__calendar"></a>
+              </label>
+              <label class="modal__label" for="adults-count">Взрослые:
+                <a href="#" class="modal__counter modal__counter_minus"></a>
+                <input class="modal__count" type="number" name="adults" id="adults-count">
+                <a href="#" class="modal__counter modal__counter_plus"></a>
+              </label>
+              <label class="modal__label" for="children-count">Дети:
+                <a href="#" class="modal__counter modal__counter_minus"></a>
+                <input class="modal__count" type="number" name="children" id="children-count">
+                <a href="#" class="modal__counter modal__counter_plus"></a>
+              </label>
+              <button class="modal__btn btn btn_modal" type="submit" name="search">Найти</button>
+            </form>
+          </div>
+        </section>
+        <div class="map">
+          <img class="map__image" src="./img/map.jpg" alt="Седона на карте" width="768" height="593">
+          <div class="y-map" id="map"></div>
+        </div>
+      </article>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__cols">
+        <div class="main-footer__col">
+          <p class="hashtag">#visitsedona</p>
+        </div>
+        <div class="main-footer__col socials">
+          <a href="#" class="social social_twitter"></a>
+          <a href="#" class="social social_facebook"></a>
+          <a href="#" class="social social_youtube"></a>
+        </div>
+        <div class="main-footer__col copyright">
+          <p class="copyright__text">Website by</p>
+          <img class="copyright__img" src="./img/logo_copyright.png" alt="HTML Academy" width="113" height="39">
+        </div>
       </div>
-    </article>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__cols">
-      <div class="main-footer__col">
-        <p class="hashtag">#visitsedona</p>
-      </div>
-      <div class="main-footer__col socials">
-        <a href="#" class="social social_twitter"></a>
-        <a href="#" class="social social_facebook"></a>
-        <a href="#" class="social social_youtube"></a>
-      </div>
-      <div class="main-footer__col copyright">
-        <p class="copyright__text">Website by</p>
-        <img class="copyright__img" src="./img/logo_copyright.png" alt="HTML Academy" width="113" height="39">
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
